@@ -1,0 +1,546 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#"
+     xml:base="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-19="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#estEnRelationDeFraterieAvec -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#estEnRelationDeFraterieAvec">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Personne"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Personne"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#estEnfantDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#estEnfantDe">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#estParentDe"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Personne"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Personne"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#estFilleDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#estFilleDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#estEnfantDe"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Femme"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Personne"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#estFilsDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#estFilsDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#estEnfantDe"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Homme"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Personne"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#estFrereDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#estFrereDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#estEnRelationDeFraterieAvec"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Homme"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Personne"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#estMereDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#estMereDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#estParentDe"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Femme"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Personne"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#estParentDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#estParentDe">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Personne"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Personne"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#estPereDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#estPereDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#estParentDe"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Homme"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Personne"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#estSoeurDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#estSoeurDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#estEnRelationDeFraterieAvec"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Femme"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Personne"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#se_marier_avec -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#se_marier_avec">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Personne"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Personne"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#age">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Personne"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#nationalite -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#nationalite">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Personne"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#nom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#nom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Personne"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Enfant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Enfant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Femme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Femme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Personne"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Homme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Fille -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Fille">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#estFilleDe"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Personne"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Enfant"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Fils"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Fils -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Fils">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#estFilsDe"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Personne"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Enfant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Fraterie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Fraterie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Frere -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Frere">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#estFrereDe"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Personne"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Fraterie"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Homme"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Soeur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#GrandMere -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#GrandMere">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#estMereDe"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Parent"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Femme"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#GrandParent"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#GrandPere"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#GrandParent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#GrandParent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#GrandPere -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#GrandPere">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#estPereDe"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Parent"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#GrandParent"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Homme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Homme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Homme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Jeune -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Jeune">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Mere -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Mere">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#estMereDe"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Personne"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Femme"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Parent"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Pere"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Oncle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Oncle">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#estFrereDe"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Parent"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Homme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Parent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Parent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Pere -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Pere">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#estPereDe"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Personne"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Homme"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Parent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Personne -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Personne"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#PersonneAge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#PersonneAge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Soeur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Soeur">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#estSoeurDe"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Personne"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Femme"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Fraterie"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Alex -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Alex">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Femme"/>
+        <se_marier_avec rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Thomas"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</age>
+        <nom>Alex</nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Chloe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Chloe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Femme"/>
+        <estFilleDe rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Marie"/>
+        <estFilleDe rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Peter"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</age>
+        <nom>Chloe</nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Claude -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Claude">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Femme"/>
+        <estFilleDe rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Sylvie"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</age>
+        <nationalite>Francaise</nationalite>
+        <nom>Claude</nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Jean -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Jean">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Homme"/>
+        <estFilsDe rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#John"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</age>
+        <nationalite>Anglaise</nationalite>
+        <nom>Jean</nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#John -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#John">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Homme"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</age>
+        <nationalite>Anglaise</nationalite>
+        <nom>John</nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Marie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Marie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Femme"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">69</age>
+        <nationalite>Française</nationalite>
+        <nom>Marie</nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Michael -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Michael">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Homme"/>
+        <estFilsDe rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Alex"/>
+        <estFilsDe rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Thomas"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</age>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Paul -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Paul">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Homme"/>
+        <estFilsDe rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Peter"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</age>
+        <nom>Paul</nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Peter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Peter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Homme"/>
+        <se_marier_avec rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Marie"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</age>
+        <nationalite>Française</nationalite>
+        <nom>Peter</nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Sylvie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Sylvie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Femme"/>
+        <estFilleDe rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Marie"/>
+        <estFilleDe rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Peter"/>
+        <se_marier_avec rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#John"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</age>
+        <nom>Sylvie</nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Thomas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Thomas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Homme"/>
+        <estFilsDe rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Peter"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</age>
+        <nationalite>Française</nationalite>
+        <nom>Thomas</nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Tom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Tom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Homme"/>
+        <estFilsDe rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Alex"/>
+        <estFilsDe rdf:resource="http://www.semanticweb.org/amelbouzeghoub/ontologies/2021/0/untitled-ontology-19#Thomas"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</age>
+        <nom>Tom</nom>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
